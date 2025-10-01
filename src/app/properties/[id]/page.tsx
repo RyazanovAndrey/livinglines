@@ -17,6 +17,16 @@ export const generateMetadata = async ({ params }: TProps) => {
     }
 }
 
+export const generateStaticParams = async () => {
+
+    const res = await fetch('https://68dd0e537cd1948060ac38cf.mockapi.io/data')
+    const data: { id: string }[] = await res.json()
+
+    return data.map(item => ({
+        id: item.id
+    }))
+}
+
 export default async function Page({ params }: TProps) {
 
     const { id } = await params
