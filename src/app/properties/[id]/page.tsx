@@ -1,12 +1,14 @@
 import TitlePage from "@/components/TitlePage";
 import { getDataSingle } from "@/helpers";
+import { Metadata } from "next";
 import Image from "next/image";
+import { title } from "process";
 
 type TProps = {
     params: Promise<{ id: string }>
 }
 
-export const generateMetadata = async ({ params } : TProps) => {
+export const generateMetadata = async ({ params }: TProps) => {
     const { id } = await params
     const data = await getDataSingle(id)
 
@@ -15,7 +17,7 @@ export const generateMetadata = async ({ params } : TProps) => {
     }
 }
 
-export default async function Page({ params } : TProps) {
+export default async function Page({ params }: TProps) {
 
     const { id } = await params
     const data = await getDataSingle(id)
