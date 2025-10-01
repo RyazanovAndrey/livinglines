@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #e46216;
+  --color-text-b: black;
+  --color-text-w: white;
+  --color-border-grey: #e1e1e1;
+  --color-section: #f0f1f3;
+
+  --font-inter: var(--font-inter);
+  --font-kanit: var(--font-kanit)
+}
+
+body {
+  font-family: var(--font-inter);
+  color: var(--color-text-b);
+}
+
+.swiper-horizontal .swiper-button-prev,
+.swiper-horizontal .swiper-button-next {
+  color: white;
+}
+
+.desc-home {
+  animation: movLeft 1s linear forwards;
+  opacity: 0;
+  animation-delay: .2s;
+}
+
+.title-home {
+  animation: movLeft 1s linear forwards;
+  opacity: 0;
+  animation-delay: .4s;
+}
+
+.content-home {
+  animation: movBottom 1s linear forwards;
+  opacity: 0;
+  animation-delay: .2s;
+}
+
+.btn-home {
+  animation: movBottom 1s linear forwards;
+  opacity: 0;
+  animation-delay: .4s;
+}
+
+.card-item {
+  border: 1px solid var(--color-border-grey);
+  flex: 0 0 300px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+.line-animation {
+  animation: moveLine 30s linear;
+}
+
+.mySwiper.swiper {
+  width: 500px;
+  height: 300px;
+}
+
+.active-link {
+  color: black;
+}
+
+.swiper-next {
+  background-image: url('/images/');
+}
+
+@keyframes moveLine {
+    0% {
+      translate: 0px;
+    }
+    100% {
+      translate: -100%;
+    }
+}
+
+@keyframes movLeft {
+  0% {
+    translate: 20px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes movBottom {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
