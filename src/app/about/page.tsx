@@ -4,13 +4,17 @@ import TitleSection from "@/components/TitleSection";
 import DesignPropcess from "@/sections/DesignPropcess";
 import Gallery from "@/sections/Gallery";
 import TitlePage from "@/components/TitlePage";
+import { getData } from "@/helpers";
 
 export const metadata: Metadata = {
     title: "About us",
     description: "Interior & Architecture Design Solutions",
 };
 
-export default function Page() {
+export default async function Page() {
+
+    const dataList = await getData('https://68dd0e537cd1948060ac38cf.mockapi.io/data')
+
     return (
         <>
             <TitlePage title="About"/>
@@ -44,7 +48,7 @@ export default function Page() {
 
             <DesignPropcess />
 
-            <Gallery />
+            <Gallery dataList={dataList} />
         </>
     );
 }

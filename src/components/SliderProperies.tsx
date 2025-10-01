@@ -1,13 +1,14 @@
 'use client'
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { galleryList } from '@/data';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import CardImage from './CardImage';
 
-function SliderProperties() {
+interface IProps { id: string, image: string, title: string, price: string }
+
+function SliderProperties({ dataList }: { dataList: IProps[] }) {
 
     return (
         <>
@@ -18,7 +19,7 @@ function SliderProperties() {
                 navigation
                 loop
             >
-                {galleryList.map((item, index) => (
+                {dataList.map((item, index) => (
                     <SwiperSlide key={index}>
                         <CardImage {...item} />
                     </SwiperSlide>

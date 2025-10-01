@@ -56,17 +56,6 @@ export const architectureList = [
     { image: '/images/service-icon-1.svg', title: 'Space Planning', desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, provident.' },
 ]
 
-export const galleryList: { id: string, image: string, title: string, price: number }[] = [
-    { id: '165926',image: '/images/property-2.jpg', title: 'Modern Family Home', price: 110000 },
-    { id: '165933',image: '/images/property-3.jpg', title: 'Gallery 2', price: 125000  },
-    { id: '165908',image: '/images/property-4.jpg', title: 'Gallery 3', price: 85000  },
-    { id: '165969',image: '/images/property-5.jpg', title: 'Gallery 4', price: 65000  },
-    { id: '165941',image: '/images/property-6.jpg', title: 'Gallery 5', price: 94000  },
-    { id: '165949',image: '/images/property-2.jpg', title: 'Gallery 6', price: 26000  },
-    { id: '165923',image: '/images/property-6.jpg', title: 'Gallery 5', price: 46000  },
-    { id: '165909',image: '/images/property-2.jpg', title: 'Gallery 6', price: 98000  }
-]
-
 export const testList: { content: string, name: string, city: string }[] = [
     { content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minus assumenda. Esse omnis animi magni nulla molestias eius, voluptate maiores?', name: 'Demmy Moore', city: 'Los Angeles' },
     { content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minus assumenda. Esse omnis animi magni nulla molestias eius, voluptate maiores?', name: 'Demmy Moore', city: 'Los Angeles' },
