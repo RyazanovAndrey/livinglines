@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 
 export default async function Page() {
 
-    const dataList = await getData('https://68dd0e537cd1948060ac38cf.mockapi.io/data')
+    const res = await fetch('https://68dd0e537cd1948060ac38cf.mockapi.io/data')
+    const dataList = await res.json()
 
     return (
         <>
