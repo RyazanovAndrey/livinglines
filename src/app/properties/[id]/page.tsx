@@ -1,8 +1,6 @@
 import TitlePage from "@/components/TitlePage";
 import { getDataSingle } from "@/helpers";
-import { Metadata } from "next";
 import Image from "next/image";
-import { title } from "process";
 
 type TProps = {
     params: Promise<{ id: string }>
