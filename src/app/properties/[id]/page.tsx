@@ -13,7 +13,7 @@ interface IList {
     price: number
 }
 
-export default async function Page({ params }: TProps) {
+export default async function Page({ params } : TProps) {
 
     const { id } = await params
     const data: IList | undefined = galleryList.find(item => item.id == id)
