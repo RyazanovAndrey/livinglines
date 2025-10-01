@@ -4,7 +4,6 @@ import TitleSection from "@/components/TitleSection";
 import DesignPropcess from "@/sections/DesignPropcess";
 import Gallery from "@/sections/Gallery";
 import TitlePage from "@/components/TitlePage";
-import { getData } from "@/helpers";
 
 export const metadata: Metadata = {
     title: "About us",
