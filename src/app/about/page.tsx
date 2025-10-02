@@ -23,7 +23,7 @@ export default async function Page() {
                     <TitleSection title="Interior & Exterior Solutions" sub="About us" desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vitae neque cumque natus reprehenderit necessitatibus eveniet, et illum ratione iure?" />
                     <div className="mt-20 flex gap-x-20 items-center">
                         <div className="w-1/2 h-[300px] overflow-hidden">
-                            <Image src={'/images/ab-vision-image1.jpeg'} width={500} height={500} alt="" />
+                            <Image src={'/livinglines/images/ab-vision-image1.jpeg'} width={500} height={500} alt="" />
                         </div>
                         <div className="w-1/2">
                             <p className="text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quod voluptatum ex commodi sint tenetur eveniet maxime distinctio nemo magnam? Eveniet incidunt debitis explicabo culpa sit beatae maxime architecto adipisci?</p>
@@ -40,7 +40,7 @@ export default async function Page() {
                             <p className="mt-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque quod dolor voluptates magni iste nobis perspiciatis ad quisquam magnam.</p>
                         </div>
                         <div className="w-1/2 h-[300px] overflow-hidden">
-                            <Image src={'/images/ab-vision-image1.jpeg'} width={500} height={500} alt="" />
+                            <Image src={'/livinglines/images/ab-vision-image1.jpeg'} width={500} height={500} alt="" />
                         </div>
                     </div>
                 </div>
