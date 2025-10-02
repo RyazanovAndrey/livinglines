@@ -1,5 +1,6 @@
 import TitlePage from "@/components/TitlePage";
 import { getDataSingle } from "@/helpers";
+import { CheckCheck } from "lucide-react";
 import Image from "next/image";
 
 type TProps = {
@@ -46,6 +47,12 @@ export default async function Page({ params }: TProps) {
                                 <div className="font-kanit text-5xl">{data.title}</div>
                                 <div className="text-2xl">$ {data.price}</div>
                                 <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam nostrum nemo voluptatum delectus quia similique eligendi corporis iusto alias necessitatibus rem possimus ratione adipisci atque at reiciendis molestias odio totam labore consequuntur aperiam nisi error, voluptatem in. Optio, laboriosam velit.</p>
+                                <div className="flex gap-x-2">
+                                    <div className="border border-gray-300 p-2 rounded-md"><span className="font-bold">Area:</span> 120 m2</div>
+                                    <div className="border border-gray-300 p-2 rounded-md"><span className="font-bold">Loaction:</span> Germany</div>
+                                    <div className="border border-gray-300 p-2 rounded-md"><span className="font-bold">Design by:</span> John Dow</div>
+                                    <div className="border border-gray-300 p-2 rounded-md"><span className="font-bold">Area: </span>120 m2</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -54,6 +61,23 @@ export default async function Page({ params }: TProps) {
             <section className="container mx-auto px-3 mb-20">
                 <div className="text-3xl font-kanit mb-5">Description</div>
                 <p className="text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat veritatis ex cumque laboriosam, libero, maxime expedita at, atque cum dolorum minima excepturi iste dolor quidem vero sequi? Rerum, quas reiciendis!</p>
+            </section>
+            <section className="container mx-auto px-3 mb-20">
+                <div className="text-3xl font-kanit mb-5">Amenities</div>
+                <div className="grid grid-cols-3 gap-x-3 w-5xl">
+                    <div className="space-y-3">
+                        <div className="border border-gray-300 p-2 rounded-md flex gap-x-2"><CheckCheck color="#e46216" />Power Back Up</div>
+                        <div className="border border-gray-300 p-2 rounded-md flex gap-x-2"><CheckCheck color="#e46216" />Reserved Parking</div>
+                    </div>
+                    <div className="space-y-3">
+                        <div className="border border-gray-300 p-2 rounded-md flex gap-x-2"><CheckCheck color="#e46216" />Internet Wi-Fi Connectivity</div>
+                        <div className="border border-gray-300 p-2 rounded-md flex gap-x-2"><CheckCheck color="#e46216" />Lift</div>
+                    </div>
+                    <div className="space-y-3">
+                        <div className="border border-gray-300 p-2 rounded-md flex gap-x-2"><CheckCheck color="#e46216" />Maintenance Staff</div>
+                        <div className="border border-gray-300 p-2 rounded-md flex gap-x-2"><CheckCheck color="#e46216" />Rentable Community Sapce</div>
+                    </div>
+                </div>
             </section>
         </>
 
