@@ -1,7 +1,7 @@
 interface IProps { id: string, image: string, title: string, price: string }
 
 export const getData = async (url: string): Promise<IProps[]> => {
-    const res = await fetch(url, { cache: 'no-cache' })
+    const res = await fetch(url)
     return res.json()
 }
 
