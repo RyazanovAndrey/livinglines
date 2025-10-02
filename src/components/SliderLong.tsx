@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 function SliderLong() {
 
-    const sliderContent: string[] = ['/images/social-slide-1.jpg', '/images/social-slide-2.jpg', '/images/social-slide-3.jpg', '/images/social-slide-5.jpg']
+    const sliderContent: string[] = ['/livinglines/images/social-slide-1.jpg', '/livinglines/images/social-slide-2.jpg', '/livinglines/images/social-slide-3.jpg', '/livinglines/images/social-slide-5.jpg']
 
     return (
         <Swiper
