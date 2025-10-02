@@ -38,7 +38,7 @@ export default async function Page({ params }: TProps) {
                     <div className="grid grid-cols-2 gap-x-20">
                         <div className="">
                             <div className="w-[700px] h-[400px] overflow-hidden">
-                                <Image src={data.image} width={700} height={400} alt="" priority />
+                                <Image src={'/livinglines' + data.image} width={700} height={400} alt="" priority />
                             </div>
                         </div>
                         <div className="flex items-center">

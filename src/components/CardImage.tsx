@@ -14,7 +14,7 @@ function CardImage({ id, image, title, price }: TProps) {
     return (
         <Link href={`/properties/${id}`}>
             <div className="relative group overflow-hidden transition-all cursor-pointer">
-                <Image src={image} alt='' width={500} height={500} className='group-hover:scale-105 transition-all' />
+                <Image src={'/livinglines' + image} alt='' width={500} height={500} className='group-hover:scale-105 transition-all' />
                 <div className="absolute -bottom-5 flex w-full px-4 justify-between items-center font-bold text-white group-hover:bottom-2 transition-all duration-300 z-40">
                     <div className="">{title}</div>
                     <div className="">$ {price}</div>
