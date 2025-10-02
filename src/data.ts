@@ -3,7 +3,7 @@ export const navLinks: { title: string, href: string}[] = [
     { href: '/about', title: 'About us' },
     { href: '/services', title: 'Services' },
     { href: '/properties', title: 'Properties' },
-    { href: '/contact', title: 'Contact' },
+    { href: '/contacts', title: 'Contact' },
 ]
 
 export const sliderList: { desc: string, title: string, btnTitle: string, image: string, content: string }[] = [
